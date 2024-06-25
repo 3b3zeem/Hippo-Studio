@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hippo Movies is a popular movie app made by Hippo">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- fontawsome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----  Header  ---->
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.png" width="110" height="22" alt="Hippo Movies">
+        </a>
+        <div class="search-box" search-box>
+            <div class="search-wrapper" search-wrapper>
+                <input type="text" name="search" aria-label="search movies" placeholder="Search any movies..."
+                    class="search-field" autocomplete="off" search-field>
+
+                <img src="./assets/images/search.png" width="24" height="24" alt="search" class="leading-icon">
+            </div>
+
+            <button class="search-btn" search-toggler>
+                <img src="./assets/images/close.png" width="24" height="24" alt="close search box">
+            </button>
+        </div>
+
+        <div class="search-bar">
+            <div class="contact">
+                <h2>Follow Me At :</h2>
+                <div class="icons-social">
+                    <a href="https://www.facebook.com/ahmed.mostafa.224722"><i class="fa-brands fa-facebook"
+                            style="color: #c3c4c6;"></i></a>
+                    <a href="mailto:ahmedmostafaabdel3azem@gmail.com"><i class="fa-regular fa-envelope"
+                            style="color: #c3c4c6;"></i></a>
+                    <a href="https://github.com/3b3zeem"><i class="fa-brands fa-github" style="color: #c3c4c6;"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-mostafa-41a758203/"><i class="fa-brands fa-linkedin"
+                            style="color: #c3c4c6;"></i></a>
+                </div>
+            </div>
+
+            <button class="search-btn" search-toggler menu-close>
+                <img src="./assets/images/search.png" width="24" height="24" alt="open search box">
+            </button>
+
+            <button class="menu-btn" menu-btn menu-toggler>
+                <img src="./assets/images/menu.png" width="24" height="24" class="menu" alt="open menu">
+                <img src="./assets/images/menu-close.png" width="24" height="24" class="close" alt="close menu">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!----  SideBar  --->
+        <nav class="sidebar" sidebar></nav>
+        <div class="overlay" overlay menu-toggler></div>
+
+        <article class="container" page-content>
+
+            <!---- Movie List ---->
+            <!-- <section class="movie-list genre-list">
+                <div class="title-wrapper">
+                <h1 class="heading">All Fantasy Movies</h1>
+            </div>
+
+
+            <div class="grid-list">
+                <div class="movie-card">
+                    <figure class="poster-box card-banner">
+                        <img src="./assets/images/slider-control.jpg" alt="Puss in Boots: The Last Wish"
+                            class="img-cover">
+                    </figure>
+
+                    <h4 class="title">Puss in Boots: The Last Wish</h4>
+
+                    <div class="meta-list">
+                        <div class="meta-item">
+                            <img src="./assets/images/star.png" width="20" height="20" loading="lazy" alt="rating">
+                            <span class="span">8.4</span>
+                        </div>
+
+                        <div class="card-badge">2022</div>
+                    </div>
+
+                    <a href="./detail.html" title="Puss in Boots: The Last Wish" class="card-btn"></a>
+                </div>
+            </div>
+
+            <button class="btn load-more">Load More</button>
+            </section> -->
+        </article>
+
+    </main>
+
+
+
+        <!-- custom js links -->
+        <script src="./assets/js/global.js" defer></script>
+        <script src="./assets/js/movie-list.js" type="module"></script>
+</body>
+
+</html>
